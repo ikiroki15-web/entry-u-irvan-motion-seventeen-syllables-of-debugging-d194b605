@@ -1,0 +1,68 @@
+# Candidate haiku — drafting notes (written in-session, 2026-11-24)
+
+Judge priorities: (1) true 5-7-5 debugging haiku, (2) concrete fresh middle
+image (breakpoint / log line / cursor at 3am), (3) last line turns/reframes,
+(4) every word earns its place, (5) reads aloud like natural speech.
+Avoided cliches: "bug hides", "coffee", "it works on my machine".
+
+## Candidate A
+Three a.m. cursor (5) / blinks on a line that can't run (7) / I wrote it myself (5)
+- Counts: Three(1) a.m.(2) cur-sor(2)=5 | blinks(1) on(1) a(1) line(1)
+  that(1) can't(1) run(1)=7 | I(1) wrote(1) it(1) my-self(2)=5
+- Verdict: decent turn (self-blame), but "a.m." is awkward to count aloud
+  and "Three a.m. cursor" reads clunky. Rejected.
+
+## Candidate B
+A breakpoint waits here (5) / while the log scrolls past the truth (7) /
+the fault was all mine (5)
+- Counts: A(1) break-point(2) waits(1) here(1)=5 | while(1) the(1) log(1)
+  scrolls(1) past(1) the(1) truth(1)=7 | the(1) fault(1) was(1) all(1) mine(1)=5
+- Verdict: concrete middle (log scrolls), but last line is flat — it just
+  restates blame instead of reframing. Rejected.
+
+## Candidate C
+Red line in the log (5) / points at the one line I skipped (7) /
+I wrote it at dawn (5)
+- Counts: Red(1) line(1) in(1) the(1) log(1)=5 | points(1) at(1) the(1)
+  one(1) line(1) I(1) skipped(1)=7 | I(1) wrote(1) it(1) at(1) dawn(1)=5
+- Verdict: solid image, but the turn is weak (dawn explains tiredness,
+  doesn't reframe). Rejected.
+
+## Candidate D  <-- FINAL PICK
+Cursor blinks at three (5) / the trace ends where I began (7) /
+and the bug was me (5)
+- Counts: Cur-sor(2) blinks(1) at(1) three(1)=5 | the(1) trace(1) ends(1)
+  where(1) I(1) be-gan(2)=7 | and(1) the(1) bug(1) was(1) me(1)=5
+- Verdict: concrete middle (stack trace, cursor at 3am), last line reframes
+  the whole search — the hunted bug is the hunter. Reads aloud naturally.
+  No filler word; "and" carries the turn. CHOSEN.
+
+## Candidate E
+One log line glows red (5) / the tests all swore it was fine (7) /
+one semicolon lied (5)
+- Counts: One(1) log(1) line(1) glows(1) red(1)=5 | the(1) tests(1) all(1)
+  swore(1) it(1) was(1) fine(1)=7 | one(1) sem-i-co-lon(3) lied(1)=5
+- Verdict: funny and concrete, but "semicolon" is a well-worn bug joke.
+  Weaker than D. Rejected.
+
+## Candidate H
+Midnight. The screen glows (5) / a red line hides in the log (7) /
+it points straight at me (5)
+- Counts: Mid-night(2) The(1) screen(1) glows(1)=5 | a(1) red(1) line(1)
+  hides(1) in(1) the(1) log(1)=7 | it(1) points(1) straight(1) at(1) me(1)=5
+- Verdict: good image and turn, but "hides" leans on the banned cliche
+  family and the turn is a smaller reframe than D's. Rejected.
+
+## Candidate J
+The tests all pass now (5) / yet the screen stays dark and still (7) /
+the bug has moved house (5)
+- Counts: The(1) tests(1) all(1) pass(1) now(1)=5 | yet(1) the(1)
+  screen(1) stays(1) dark(1) and(1) still(1)=7 | the(1) bug(1) has(1)
+  moved(1) house(1)=5
+- Verdict: playful ("moved house" is fresh), but the middle image is vaguer
+  than D's stack trace and the turn is a joke, not a reframe. Rejected.
+
+## FINAL
+Cursor blinks at three
+the trace ends where I began
+and the bug was me
